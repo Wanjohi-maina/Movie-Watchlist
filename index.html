@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- Meta-data -->
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title>Movie Watchlist</title>
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="index.css">
+         <!-- Font-Awesome Icons -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Find your film</h1>
+            <a href="myWatchlist.html"><h2 class="sub-title">My Watchlist</h2></a>
+        </header>
+        <main>
+            <section class="input">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="input-search" id="input-movie-search" placeholder="Search for a movie">
+                <button class="input-search-btn" id="input-search-btn">Search</button>
+            </section>
+            <section id="movie-watchlist" class="movie-watchlist">
+                <div class="default-state">
+                    <img class="explore-icon" src="img/explore-icon.png">
+                    <p class="default-state-hint">Start exploring</p>
+                </div>
+            </section>
+        </main>
+    <script src="index.js"></script>
+    </body>
+</html>
