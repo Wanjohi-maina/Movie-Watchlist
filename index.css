@@ -66,6 +66,7 @@ a {
     border: none;
     background-color: #2E2E2F;
     color: #A5A5A5;
+    outline: none; 
 
 }
 .input-search::placeholder {
@@ -252,3 +253,4 @@ a {
 
 
 }
+
