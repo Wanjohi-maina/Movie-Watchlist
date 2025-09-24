@@ -61,7 +61,7 @@ a {
     color: gray;
 }
 .input-search {
-    flex: 1; /* Take up remaining space */
+    width: 100%;
     padding:  10px 15px 10px 35px;
     border: none;
     background-color: #2E2E2F;
@@ -253,4 +253,5 @@ a {
 
 
 }
+
 
