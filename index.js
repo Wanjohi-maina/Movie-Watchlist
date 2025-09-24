@@ -16,14 +16,14 @@ async function searchMovie () {
     }
 
     // Call OMDB API for search results
-    const res = await fetch(` http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${query}`)
+    const res = await fetch(` http://www.omdbapi.com/?i=tt3896198&apikey=13df0837&s=${query}`)
     const data = await res.json()
 
     movieWatchlist.innerHTML = "" // clear old results
     if (data.Response === "True") {
         // Loop over each movie in the search results
         for (const movie of data.Search) {
-            const detailRes = await fetch (`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`)
+            const detailRes = await fetch (`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=13df0837`)
             const movieDetails = await detailRes.json()
             console.log(movieDetails)
 
@@ -67,7 +67,7 @@ movieWatchlist.addEventListener("click", async function(e){
         if (watchlist.some(m => m.imdbID === imdbID)) return  // If already exists, stop the function
 
         // Fetch full movie details from OMDB API using the IMDb ID
-        const res = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`)
+        const res = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=13df0837`)
         const movieData = await res.json()
 
         // Add the movie to the watchlist array
@@ -76,3 +76,4 @@ movieWatchlist.addEventListener("click", async function(e){
         localStorage.setItem("watchlist", JSON.stringify(watchlist))
     }
 })
+
