@@ -20,7 +20,7 @@ header {
 }
 
 header, main {
-    padding: 0 2.5em;
+    padding: 0 2em;
 }
 .title {
     font-size: 2rem;
@@ -253,5 +253,6 @@ a {
 
 
 }
+
 
 
