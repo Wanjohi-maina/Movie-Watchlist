@@ -23,7 +23,7 @@ header, main {
     padding: 0 2em;
 }
 .title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
 }
 
@@ -42,7 +42,7 @@ a {
     color: #FFFFFF;  
 }
 .sub-title {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
 /* Input search area */
@@ -253,6 +253,7 @@ a {
 
 
 }
+
 
 
 
